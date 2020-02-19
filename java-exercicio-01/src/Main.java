@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		int menor=0, maior=0, x, cont = 0;
+		int menor=0, maior=0, x, cont = 0, soma = 0;
 		
 		Scanner ler = new Scanner(System.in);
 		
@@ -18,10 +18,15 @@ public class Main {
 		if(x > maior) maior = x;
 		if(x < menor) menor = x;
 		
-		cont ++;		
+		cont ++;	
+		soma = soma + x;
 		}
 		if(maior > 50) System.out.println("Valor muito Alto!");
 		else System.out.println("Valor normal!");
 		
+		System.out.println("Maior: " +  maior);
+		System.out.println("Menor: " +  menor);
+		System.out.println("Soma: " +  soma);
+				
 	}
 }
