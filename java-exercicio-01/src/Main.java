@@ -24,9 +24,16 @@ public class Main {
 		if(maior > 50) System.out.println("Valor muito Alto!");
 		else System.out.println("Valor normal!");
 		
+		resul(maior, menor, soma);
+				
+	}
+	
+	private static void resul(int maior, int menor, int soma) {
 		System.out.println("Maior: " +  maior);
 		System.out.println("Menor: " +  menor);
 		System.out.println("Soma: " +  soma);
-				
 	}
+	
+	
+	
 }
